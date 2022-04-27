@@ -1,0 +1,11 @@
+{% extends 'Session_Phases/base.html' %}
+
+{% block main %}
+<h2>Lista Sessoes</h2>
+{% for session in sessions %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <a href="sessao/{{session.number}}">{{session}}</a>   
+    </form>
+{% endfor %}
+{% endblock  %}

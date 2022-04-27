@@ -1,0 +1,13 @@
+{% extends 'Session_Phases/base.html' %}
+
+{%block main%}
+    {{session}}
+
+    <ol>
+        {% for phase in phases %}
+            <li><div>{{phase}}</div></li>
+        {% endfor %}
+    </ol>
+    
+    
+{% endblock  %}
